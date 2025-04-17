@@ -1,39 +1,38 @@
 #ifndef UNNITES_H
 #define UNNITES_H
 
+#include <iostream>
+#include <string>
 
-class Unnites
-{
+using namespace std;
+
+class Unnites {
     public:
         Unnites();
-        virtual ~Unnites();
+        Unnites(string nom, string descr, string status, string bonus[5][2], int niv, float PV[2], float XP[2], float puiss[2]);
 
-        string Getnom() { return nom; }
-        void Setnom(string val) { nom = val; }
-        string Getdescr() { return descr; }
-        void Setdescr(string val) { descr = val; }
-        string Getstatus() { return status; }
-        void Setstatus(string val) { status = val; }
-        string Getbonus[5][2]() { return bonus[5][2]; }
-        void Setbonus[5][2](string val) { bonus[5][2] = val; }
-        int Getniv() { return niv; }
-        void Setniv(int val) { niv = val; }
-        float GetPV[2]() { return PV[2]; }
-        void SetPV[2](float val) { PV[2] = val; }
-        float GetXP[2]() { return XP[2]; }
-        void SetXP[2](float val) { XP[2] = val; }
-        float Getpuiss[2]() { return puiss[2]; }
-        void Setpuiss[2](float val) { puiss[2] = val; }
+        string getNom() const { return nom; }
+        string getDescr() const { return descr; }
+        string getStatus() const { return status; }
+        string getBonus() const { return bonus[5][2]; }
+        int getNiv() const { return niv; }
+        float getPV() const { return PV[2]; }
+        float getXP() const { return XP[2]; }
+        float getPuiss() const { return puiss[2]; }
+
+        void setNom(string nom);
+        void setDescr(string descr);
+        void setStatus(string status);
+        void setBonus(string bonus1 = NULL, string bonus2 = NULL, string bonus3 = NULL, string bonus4 = NULL, string bonus5 = NULL, string descrBonus1 = NULL, string descrBonus2 = NULL, string descrBonus3 = NULL, string descrBonus4 = NULL, string descrBonus5 = NULL);
+        void setNiv(int niv);
+        void setPV(float PV, float PVmax);
+        void setXP(float XP, float XPmax);
+        void setPuiss(float puiss);
 
     protected:
-        string nom;
-        string descr;
-        string status;
-        string bonus[5][2];
+        string nom, descr, status, bonus[5][2];
         int niv;
-        float PV[2];
-        float XP[2];
-        float puiss[2];
+        float PV[2], XP[2], puiss[2];
 
     private:
 };
