@@ -23,7 +23,7 @@ class Unnites {
         void setNom(string nom);
         void setDescr(string descr);
         void setStatus(string status);
-        void setBonus(string bonus1 = NULL, string bonus2 = NULL, string bonus3 = NULL, string bonus4 = NULL, string bonus5 = NULL, string descrBonus1 = NULL, string descrBonus2 = NULL, string descrBonus3 = NULL, string descrBonus4 = NULL, string descrBonus5 = NULL);
+        void setBonus(string bonus1, string bonus2, string bonus3, string bonus4, string bonus5, string descrBonus1, string descrBonus2, string descrBonus3, string descrBonus4, string descrBonus5);
         void setNiv(int niv);
         void setPV(float PV, float PVmax);
         void setXP(float XP, float XPmax);

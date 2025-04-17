@@ -7,16 +7,5 @@ using namespace std;
 int main() {
     cout << "Main" << endl;
 
-    Unnites A;
-
-    A.setNom("NOooo");
-    A.setDescr("Lolilol");
-    A.setStatus("Retranché");
-    A.setBonus("Poufi", "fezq", "gr", "rse", "feq", "YOOOOOOLOOOOOOO", "46", "275", "542", "425");
-    A.setNiv(1);
-    A.setPV(10.56, 15);
-    A.setXP(1.2, 14);
-    A.setPuiss(12.14);
-
     return 0;
 }
