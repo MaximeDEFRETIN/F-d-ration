@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Unnites::Unnites() : nom(""), descr(""), status(""), bonus{}, niv(0), PV{}, XP{}, puiss{} {}
-Unnites::Unnites(string nom, string descr, string status, string bonus[5][2], int niv, float PV[2], float XP[2], float puiss[2]) : nom(nom), descr(""), status(descr), bonus{}, niv(niv), PV{}, XP{}, puiss{} {}
+Unnites::Unnites() : nom(""), descr(""), status(""), type{}, bonus{}, niv(0), PV{}, XP{}, puiss{} {}
+Unnites::Unnites(string nom, string descr, string status, string type[4], string bonus[5][2], int niv, float PV[2], float XP[2], float puiss[2]) : nom(nom), descr(descr), status(status), type{}, bonus{}, niv(niv), PV{}, XP{}, puiss{} {}
 
 void Unnites::setNom(string nom) {
     this->nom = nom;
@@ -19,7 +19,7 @@ void Unnites::setStatus(string status) {
     this->status = status;
     cout << "État :\n" << status << "\n" << endl;
 }
-void Unnites::setBonus(string bonus1, string bonus2, string bonus3, string bonus4, string bonus5, string descrBonus1, string descrBonus2, string descrBonus3, string descrBonus4, string descrBonus5) {
+void Unnites::setBonus(string bonus1, string descrBonus1, string bonus2, string descrBonus2, string bonus3, string descrBonus3, string bonus4, string descrBonus4, string bonus5, string descrBonus5) {
     this->bonus[0][0] = bonus1;
     this->bonus[0][1] = descrBonus1;
     this->bonus[1][0] = bonus2;
@@ -48,6 +48,14 @@ void Unnites::setXP(float XP, float XPmax) {
 }
 void Unnites::setPuiss(float puiss) {
     this->puiss[0] = puiss;
-    this->puiss[1] = puiss+ puiss * (this->PV[0] / this->PV[1]);
+    this->puiss[1] = puiss * (this->PV[0] / this->PV[1]);
     cout << "Puissance :\n" << this->puiss[0] << " -> " << this->puiss[1] << "\n" << endl;
+}
+
+void Unnites::setType(string type, string typeSpat, string typeAtt, string typeEre) {
+    this->type[0] = type;
+    this->type[1] = typeSpat;
+    this->type[2] = typeAtt;
+    this->type[3] = typeEre;
+    cout << "Puissance :\n" << this->type[0] << ", " << this->type[1] << "," << this->type[2] << this->type[3]  << "\n" << endl;
 }
