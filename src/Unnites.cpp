@@ -64,3 +64,8 @@ void Unnites::setIndex(string index) {
     this->index = index;
     cout << "Index :\n" << this->index << "\n" << endl;
 }
+
+void attaquer(Unnites &U) {
+    U.setPV(U.getPV(0)-(this->puiss[1]*0.2), U.getPV(1));
+    this->XP[1]+=1;
+}
