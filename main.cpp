@@ -12,6 +12,7 @@ int main() {
     A.setNom("NOooo");
     A.setDescr("Lolilol");
     A.setStatus("Retranché");
+    A.setIndex("Phillipe Poutou");
     A.setType("Militaire", "Terrestre", "Distance", "Antiquité");
     A.setBonus("Poufi", "fezq", "", "", "", "", "", "", "", "");
     A.setNiv(1);
