@@ -79,6 +79,5 @@ void Unnites::attaquer(Unnites &U) {
 
         U.setPV(U.getPV(0)-(this->puiss[1]*0.2), U.getPV(1));
         this->XP[0]+=1;
-
     }
 }
