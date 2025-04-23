@@ -33,6 +33,8 @@ class Unnites {
         void setXP(float XP, float XPmax);
         void setPuiss(float puiss);
 
+        void attaquer(Unnites &U);
+
     protected:
         string nom, descr, status, bonus[5][2], type[4], index;
         int niv;
