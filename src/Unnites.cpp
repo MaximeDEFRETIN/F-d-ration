@@ -64,6 +64,10 @@ void Unnites::setIndex(string index) {
     this->index = index;
     cout << "Index :\n" << this->index << "\n" << endl;
 }
+void Unnites::setcoutR(float coutR) {
+    this->coutR = coutR;
+    cout << "Cot de recrutement :\n" << this->coutR << "\n" << endl;
+}
 
 void Unnites::attaquer(Unnites &U) {
     if(U.getType(2) == "Distance" && this->type[3] == "CAC") {

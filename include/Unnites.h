@@ -21,6 +21,7 @@ class Unnites {
         float getPV(int x) const { return this->PV[x]; }
         float getXP(int x) const { return this->XP[x]; }
         float getPuiss(int x) const { return this->puiss[x]; }
+        float getcoutR() const { return this->coutR; }
 
         void setNom(string nom);
         void setDescr(string descr);
@@ -32,13 +33,14 @@ class Unnites {
         void setPV(float PV, float PVmax);
         void setXP(float XP, float XPmax);
         void setPuiss(float puiss);
+        void setcoutR(float coutR);
 
         void attaquer(Unnites &U);
 
     protected:
         string nom, descr, status, bonus[5][2], type[4], index;
         int niv;
-        float PV[2], XP[2], puiss[2];
+        float PV[2], XP[2], puiss[2], coutR;
 
     private:
 };

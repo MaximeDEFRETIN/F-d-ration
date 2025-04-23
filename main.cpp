@@ -19,6 +19,7 @@ int main() {
     A.setPV(10.56, 15);
     A.setXP(1.2, 14);
     A.setPuiss(12.14);
+    A.setcoutR(456.1268);
 
     B.setNom("YOOOOLOOO");
     B.setDescr("Lolilol");
@@ -30,6 +31,7 @@ int main() {
     B.setPV(11.27, 15);
     B.setXP(1.2, 14);
     B.setPuiss(14.34);
+    B.setcoutR(687.4768);
 
     /**cout << A.getPV(0) << " " << A.getXP(0) << "\n" << B.getPV(0) << " " << B.getXP(0) << endl;
 
