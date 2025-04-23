@@ -40,8 +40,8 @@ void Unnites::setPV(float PV, float PVmax) {
     this->PV[0] = PV;
     this->PV[1] = PVmax;
     cout << "Points de vie :\n" << this->PV[0] << "/" << this->PV[1] << "\n" << endl;
-    //(this->PV[1]-this->PV[0] >= 1)?this->PV[0]+=1:this->PV[0]+=(this->PV[1]-this->PV[0]);
-    //cout << "Points de vie :\n" << this->PV[0] << "/" << this->PV[1] << "\n" << endl;
+    (this->status == "Retranché")?(this->PV[1]-this->PV[0]>=1)?this->PV[0]+=1:this->PV[0]+=(this->PV[1]-this->PV[0]):printf(nullptr);
+    cout << "Points de vie :\n" << this->PV[0] << "/" << this->PV[1] << "\n" << endl;
 }
 void Unnites::setXP(float XP, float XPmax) {
     this->XP[0] = XP;
@@ -70,11 +70,11 @@ void Unnites::attaquer(Unnites &U) {
         U.setPV(U.getPV(0)-(this->puiss[1]*0.2), U.getPV(1));
         this->XP[0]+=1;
     } else {
-            setPV(getPV(0)-(U.getPuiss(1)*.02), getPV(1));
-            U.setXP(U.getXP(0)+1, U.getXP(1));
+        setPV(getPV(0)-(U.getPuiss(1)*.02), getPV(1));
+        U.setXP(U.getXP(0)+1, U.getXP(1));
 
-            U.setPV(U.getPV(0)-(this->puiss[1]*0.2), U.getPV(1));
-            this->XP[0]+=1;
+        U.setPV(U.getPV(0)-(this->puiss[1]*0.2), U.getPV(1));
+        this->XP[0]+=1;
 
     }
 }

@@ -31,11 +31,11 @@ int main() {
     B.setXP(1.2, 14);
     B.setPuiss(14.34);
 
-    cout << A.getPV(0) << " " << A.getXP(0) << "\n" << B.getPV(0) << " " << B.getXP(0) << endl;
+    /**cout << A.getPV(0) << " " << A.getXP(0) << "\n" << B.getPV(0) << " " << B.getXP(0) << endl;
 
     A.attaquer(B);
 
-    cout << A.getPV(0) << " " << A.getXP(0) << "\n" << B.getPV(0) << " " << B.getXP(0) << endl;
+    cout << A.getPV(0) << " " << A.getXP(0) << "\n" << B.getPV(0) << " " << B.getXP(0) << endl;**/
 
     return 0;
 }
