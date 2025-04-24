@@ -33,9 +33,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Cases.h" />
 		<Unit filename="include/Dirigeant.h" />
 		<Unit filename="include/Unnites.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Cases.cpp" />
 		<Unit filename="src/Dirigeant.cpp" />
 		<Unit filename="src/Unnites.cpp" />
 		<Extensions />
