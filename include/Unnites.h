@@ -84,49 +84,27 @@ class Unnites {
         **/
         float getcoutR() const { return this->coutR; }
 
-        /**
-        Permet de modifier le nom de l'unité
-        **/
+        /** Permet de modifier le nom de l'unité **/
         void setNom(string nom);
-        /**
-        Permet de modifier la description de l'unité
-        **/
+        /** Permet de modifier la description de l'unité **/
         void setDescr(string descr);
-        /**
-        Permet de modifier le status de l'unité
-        **/
+        /** Permet de modifier le status de l'unité **/
         void setStatus(string status);
-        /**
-        Permet de modifier les promotions de l'unité
-        **/
+        /** Permet de modifier les promotions de l'unité **/
         void setBonus(string bonus1, string descrBonus1, string bonus2, string descrBonus2, string bonus3, string descrBonus3, string bonus4, string descrBonus4, string bonus5, string descrBonus5);
-        /**
-        Permet de modifier le type de l'unité
-        **/
+        /** Permet de modifier le type de l'unité **/
         void setType(string type, string typeSpat, string typeAtt, string typeEre);
-        /**
-        Permet de modifier l'index de l'unité, qui l'identifie spécifiquement
-        **/
+        /** Permet de modifier l'index de l'unité, qui l'identifie spécifiquement **/
         void setIndex(string index);
-        /**
-        Permet de modifier le niveau de l'unité
-        **/
+        /** Permet de modifier le niveau de l'unité **/
         void setNiv(int niv);
-        /**
-        Permet de modifier les PV de l'unité
-        **/
+        /** Permet de modifier les PV de l'unité **/
         void setPV(float PV, float PVmax);
-        /**
-        Permet de modifier l'expériences de l'unité
-        **/
+        /** Permet de modifier l'expériences de l'unité **/
         void setXP(float XP, float XPmax);
-        /**
-        Permet de modifier la puissance de l'unité
-        **/
+        /** Permet de modifier la puissance de l'unité **/
         void setPuiss(float puiss);
-        /**
-        Permet de modifier le coût de recrutement de l'unité
-        **/
+        /** Permet de modifier le coût de recrutement de l'unité **/
         void setcoutR(float coutR);
 
         /**
@@ -135,7 +113,7 @@ class Unnites {
         @U -> unité attquer
         **/
         void attaquer(Unnites &U);
-        //Permet à une unité de récupérer ses PV sil elle est retranché
+        /**Permet à une unité de récupérer ses PV sil elle est retranché **/
         void recuperationPV();
 
     protected:
