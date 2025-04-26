@@ -135,6 +135,8 @@ class Unnites {
         @U -> unité attquer
         **/
         void attaquer(Unnites &U);
+        //Permet à une unité de récupérer ses PV sil elle est retranché
+        void recuperationPV();
 
     protected:
         string nom, descr, status, bonus[5][2], type[4], index;

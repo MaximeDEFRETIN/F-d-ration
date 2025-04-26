@@ -26,9 +26,6 @@ void Unnites::setNiv(int niv) { this->niv = niv; }
 void Unnites::setPV(float PV, float PVmax) {
     this->PV[0] = PV;
     this->PV[1] = PVmax;
-    cout << "Points de vie :\n" << this->PV[0] << "/" << this->PV[1] << "\n" << endl;
-    (this->status == "Retranché")?(this->PV[1]-this->PV[0]>=1)?this->PV[0]+=1:this->PV[0]+=(this->PV[1]-this->PV[0]):printf(nullptr);
-    cout << "Points de vie :\n" << this->PV[0] << "/" << this->PV[1] << "\n" << endl;
 }
 void Unnites::setXP(float XP, float XPmax) {
     this->XP[0] = XP;
@@ -36,7 +33,7 @@ void Unnites::setXP(float XP, float XPmax) {
 }
 void Unnites::setPuiss(float puiss) {
     this->puiss[0] = puiss;
-    this->puiss[1] = (puiss + ((this->status == "Retranché")?puiss*0.1:0)) * (this->PV[0] / this->PV[1]);
+    this->puiss[1] = (puiss+((this->status == "Retranché")?puiss*0.1:0))*(this->PV[0] / this->PV[1]);
 }
 void Unnites::setType(string type, string typeSpat, string typeAtt, string typeEre) {
     this->type[0] = type;
@@ -59,3 +56,5 @@ void Unnites::attaquer(Unnites &U) {
         this->XP[0]+=1;
     }
 }
+
+void Unnites::recuperationPV() { (this->status == "Retranché")?(this->PV[1]-this->PV[0]>=1)?this->PV[0]+=1:this->PV[0]+=(this->PV[1]-this->PV[0]):printf(nullptr); }
