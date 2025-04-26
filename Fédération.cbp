@@ -36,10 +36,12 @@
 		<Unit filename="include/Cases.h" />
 		<Unit filename="include/Dirigeant.h" />
 		<Unit filename="include/Unnites.h" />
+		<Unit filename="include/Villes.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Cases.cpp" />
 		<Unit filename="src/Dirigeant.cpp" />
 		<Unit filename="src/Unnites.cpp" />
+		<Unit filename="src/Villes.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
