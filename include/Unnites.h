@@ -9,7 +9,7 @@ using namespace std;
 class Unnites {
     public:
         Unnites();
-        Unnites(string nom, string descr, string status, string type[4], string bonus[5][2], string index, int niv, float PV[2], float XP[2], float puiss[2]);
+        Unnites(string nom, string descr, string status, string type[4], string bonus[5][2], string index, int niv, float PV[2], float XP[2], float puiss[2], float coutR, float coutE);
 
         /**
         Permet d'obtenir le nom de l'unité
@@ -82,7 +82,13 @@ class Unnites {
 
         @coutR -> coût de recrutement de l'unité
         **/
-        float getcoutR() const { return this->coutR; }
+        float getCoutR() const { return this->coutR; }
+        /**
+        Permet d'obtenir le coût d'entretien de l'unité
+
+        @coutE -> coût d'entretien de l'unité
+        **/
+        float getCoutE() const { return this->coutE; }
 
         /** Permet de modifier le nom de l'unité **/
         void setNom(string nom);
@@ -105,12 +111,14 @@ class Unnites {
         /** Permet de modifier la puissance de l'unité **/
         void setPuiss(float puiss);
         /** Permet de modifier le coût de recrutement de l'unité **/
-        void setcoutR(float coutR);
+        void setCoutR(float coutR);
+        /** Permet de modifier le coût d'entretien de l'unité **/
+        void setCoutE(float coutE);
 
         /**
         Permet à une unité d'en attauquer une autre
 
-        @U -> unité attquer
+        @U -> U est l'unité qui attque
         **/
         void attaquer(Unnites &U);
         /**Permet à une unité de récupérer ses PV sil elle est retranché **/
@@ -119,7 +127,7 @@ class Unnites {
     protected:
         string nom, descr, status, bonus[5][2], type[4], index;
         int niv;
-        float PV[2], XP[2], puiss[2], coutR;
+        float PV[2], XP[2], puiss[2], coutR, coutE;
 
     private:
 };

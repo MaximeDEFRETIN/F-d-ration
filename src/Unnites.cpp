@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Unnites::Unnites() : nom(""), descr(""), status(""), type{{0}, {0}, {0}, {0}}, bonus{}, index(""), niv(0), PV{{0}, {0}}, XP{{0}, {0}}, puiss{{0}, {0}} {}
-Unnites::Unnites(string nom, string descr, string status, string type[4], string bonus[5][2], string index, int niv, float PV[2], float XP[2], float puiss[2]) : nom(nom), descr(descr), status(status), type{{0}, {0}}, bonus{}, index(index), niv(niv), PV{{0}, {0}}, XP{{0}, {0}}, puiss{{0}, {0}} {}
+Unnites::Unnites() : nom(""), descr(""), status(""), type{{0}, {0}, {0}, {0}}, bonus{}, index(""), niv(0), PV{{0}, {0}}, XP{{0}, {0}}, puiss{{0}, {0}}, coutR(0), coutE(0) {}
+Unnites::Unnites(string nom, string descr, string status, string type[4], string bonus[5][2], string index, int niv, float PV[2], float XP[2], float puiss[2], float coutR, float coutE) : nom(nom), descr(descr), status(status), type{{0}, {0}}, bonus{}, index(index), niv(niv), PV{{0}, {0}}, XP{{0}, {0}}, puiss{{0}, {0}}, coutR(0), coutE(0) {}
 
 void Unnites::setNom(string nom) { this->nom = nom; }
 void Unnites::setDescr(string descr) { this->descr = descr; }
@@ -42,7 +42,8 @@ void Unnites::setType(string type, string typeSpat, string typeAtt, string typeE
     this->type[3] = typeEre;
 }
 void Unnites::setIndex(string index) { this->index = index; }
-void Unnites::setcoutR(float coutR) { this->coutR = coutR; }
+void Unnites::setCoutR(float coutR) { this->coutR = coutR; }
+void Unnites::setCoutE(float coutE) { this->coutE = coutE; }
 
 void Unnites::attaquer(Unnites &U) {
     if(U.getType(2) == "Distance" && this->type[3] == "CAC") {
