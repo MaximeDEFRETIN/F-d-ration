@@ -9,7 +9,8 @@ int main() {
 
     Fichiers u;
 
-    u.creaFich("fichiers/", "lol", ".json", "{\"nom\":\"Defretin\",\n\"prénom\":\"Maxime\"}");
+    u.creaFich("fichiers/", "lol", ".json", "[\"nom:\"\n\"Defretin\",\n\"prénom:\"\n\"Maxime\"]");
+    u.lecFich("fichiers/", "lol", ".json");
 
     return 0;
 }

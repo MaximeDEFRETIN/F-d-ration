@@ -13,6 +13,7 @@ class Fichiers {
         //Fichiers();
 
         void creaFich (string chemin, string nom, string format, string contenu);
+        void lecFich (string chemin, string nom, string format);
 
     protected:
 
