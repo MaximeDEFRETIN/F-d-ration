@@ -11,7 +11,7 @@ class Villes {
         Villes();
         Villes(string nom, string listBatiments[5], string listReligions[5], float rendement[5], int nbHabitant);
 
-        string getNom() const { return nom; }
+        string getNom() const { return this->nom; }
         string getListBatiments(int x) const { return this->listBatiments[x]; }
         string getListReligions(int x) const { return this->listReligions[x]; }
         float getRendement(int x) const { return this->rendement[x]; }
