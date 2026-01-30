@@ -33,13 +33,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Batiment.h" />
 		<Unit filename="include/Cases.h" />
 		<Unit filename="include/Dirigeant.h" />
+		<Unit filename="include/Fichiers.h" />
+		<Unit filename="include/Religion.h" />
 		<Unit filename="include/Unnites.h" />
 		<Unit filename="include/Villes.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Batiment.cpp" />
 		<Unit filename="src/Cases.cpp" />
 		<Unit filename="src/Dirigeant.cpp" />
+		<Unit filename="src/Fichiers.cpp" />
+		<Unit filename="src/Religion.cpp" />
 		<Unit filename="src/Unnites.cpp" />
 		<Unit filename="src/Villes.cpp" />
 		<Extensions />
