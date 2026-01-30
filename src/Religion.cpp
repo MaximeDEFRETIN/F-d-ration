@@ -4,8 +4,8 @@
 
 using namespace std;
 
-Religion::Religion() : nom(""), description(""), unite{}, batiment{}, eUnite(0), eBatiment{} {}
-Religion::Religion(string nom, string description, string unite[2], string batiment[2], float eUnite, float eBatiment[4][2]) : nom(nom), description(description), unite{}, batiment{}, eUnite(eUnite), eBatiment{} {}
+Religion::Religion() : nom(""), description(""), unite{}, batiment{}, eBatiment{} {}
+Religion::Religion(string nom, string description, string unite[2], string batiment[2], float eBatiment[4][2]) : nom(nom), description(description), unite{}, batiment{}, eBatiment{} {}
 
 void Religion::setNom(string nom) { this->nom = nom; }
 void Religion::setDescription(string description) { this->description = description; }
@@ -17,7 +17,6 @@ void Religion::setBatiment(string nBat, string descrBat) {
     this->batiment[0] = nBat;
     this->batiment[1] = descrBat;
 }
-void Religion::setEUnite(float eUnite) { this->eUnite = eUnite; }
 void Religion::setEBatiment(float relAbs, float relRel, float sciAbs, float sciRel, float cltAbs, float cltRel, float bhnAbs, float bhnRel) {
     this->eBatiment[0][0] = relAbs;
     this->eBatiment[0][1] = relRel;
