@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <Batiment.h>
+#include <Cases.h>
 
 using namespace std;
 

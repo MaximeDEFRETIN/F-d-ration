@@ -4,21 +4,21 @@
 
 using namespace std;
 
-Cases::Cases() : type{{""}, {""}, {""}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}, {0}} {}
-Cases::Cases(string type[3], string ressources[2], string amenagement[2], int position[2], float rendements[3]) : type{{0}, {0}, {0}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}} {}
+Cases::Cases() : type{{0}, {0}, {0}}, ressources{{0}, {0}},  amenagement{{0}, {0}}, position{{0}, {0}}, rendements{{0}, {0}, {0}} {}
+Cases::Cases(int type[3], int ressources[2], int amenagement[2], int position[2], float rendements[3]) : type{{0}, {0}, {0}}, ressources{{0}, {0}},  amenagement{{0}, {0}}, position{{0}, {0}}, rendements{{0}, {0}} {}
 
-void Cases::setType(string type, string plaColl, string forJung) {
+void Cases::setType(int type, int plaColl, int forJung) {
     this->type[0] = type;
     this->type[1] = plaColl;
     this->type[2] = forJung;
 }
-void Cases::setRessources(string type, string nom) {
+void Cases::setRessources(int type, int nom) {
     this->ressources[0] = type;
     this->ressources[1] = nom;
 }
-void Cases::setAmenagement(string a1, string a2) {
-    this->amenagement[0] = a1;
-    this->amenagement[1] = a2;
+void Cases::setAmenagement(int ame, int route) {
+    this->amenagement[0] = ame;
+    this->amenagement[1] = route;
 }
 void Cases::setPosition(int x, int y) {
     this->position[0] = x;
