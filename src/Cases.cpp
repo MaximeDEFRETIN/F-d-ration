@@ -4,10 +4,9 @@
 
 using namespace std;
 
-Cases::Cases() : index(""), type{{""}, {""}, {""}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}, {0}} {}
-Cases::Cases(string index, string type[3], string ressources[2], string amenagement[2], int position[2], float rendements[3]) : index(index), type{{0}, {0}, {0}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}} {}
+Cases::Cases() : type{{""}, {""}, {""}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}, {0}} {}
+Cases::Cases(string type[3], string ressources[2], string amenagement[2], int position[2], float rendements[3]) : type{{0}, {0}, {0}}, ressources{{""}, {""}},  amenagement{{""}, {""}}, position{{0}, {0}}, rendements{{0}, {0}} {}
 
-void Cases::setIndex(string index) { this->index = index; }
 void Cases::setType(string type, string plaColl, string forJung) {
     this->type[0] = type;
     this->type[1] = plaColl;
