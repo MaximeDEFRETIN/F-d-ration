@@ -101,8 +101,6 @@ void Cases::genCart(int nbLarg, int type) {
                         setRendements(2,(getRessources()==7)?1:0,0);
                         //setAmenagement(0, 0);
                     }
-
-                    cout << getPosition(0) << " " << getPosition(1) << "\n" << getType(1) << "\n" << getRendements(0) << " " << getRendements(1) << " " << getRendements(2) << "\n" << getRessources() << "\n" << endl;
                 }
             }
           break;
